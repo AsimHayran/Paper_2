@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUCK THE PAPER_2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script> <!-- For data labels -->
+</head>
+<body class="loading">
+    <!-- Glitch Intro Animation -->
+    <div class="glitch-container" id="glitch-intro">
+        <div class="glitch-text" data-text="Created by ShadowRoot17">Created by ShadowRoot17</div>
+    </div>
+
+    <!-- Your Website Content (hidden during intro) -->
+    <div id="main-content">
+        <!-- Your existing website content here -->
+    </div>
+    
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-atom"></i> FUCK_Physics <span class="highlight">Edexcel Higher Tier</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#sections">Sections <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#section18">18. Conservation of Energy</a>
+                            <a href="#section19">19. Waves & EM Spectrum</a>
+                            <a href="#section20">20. YOG</a>
+                            <a href="#section21">21. Forces & Energy</a>
+                            <a href="#section22">22. Electricity & Circuits</a>
+                            <a href="#section23">23. Magnetic Fields</a>
+                            <a href="#section24">24. Matter</a>
+                        </div>
+                    </li>
+                    <li><a href="#equations">Equations</a></li>
+                    <li><a href="#graphs">Graphs</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h2>FCUK_Physics_Paper2 </h2>
+            <p>YOG_THE_BLACK_THIEF</p>
+        </section>
+
+        <!-- Section 18: Conservation of Energy -->
+        <section id="section18" class="content-section">
+            <h2><i class="fas fa-bolt"></i> 18. Conservation of Energy</h2>
+            
+            <div class="subsection">
+                <h3>Energy Stores and Transfers</h3>
+                <p>Energy can be stored in different ways:</p>
+                <ul class="detailed-list">
+                    <li><strong>Thermal energy</strong> - energy stored in the temperature of an object</li>
+                    <li><strong>Kinetic energy</strong> - energy stored in moving objects: \( E_k = \frac{1}{2}mv^2 \)</li>
+                    <li><strong>Gravitational potential energy</strong> - energy stored in raised objects: \( E_p = mgh \)</li>
+                    <li><strong>Elastic potential energy</strong> - energy stored in stretched springs: \( E_e = \frac{1}{2}kx^2 \)</li>
+                    <li><strong>Chemical energy</strong> - energy stored in chemical bonds</li>
+                    <li><strong>Nuclear energy</strong> - energy stored in atomic nuclei</li>
+                    <li><strong>Magnetic energy</strong> - energy stored in magnetic fields</li>
+                    <li><strong>Electrostatic energy</strong> - energy stored in electric fields</li>
+                </ul>
+                
+                <div class="equation-box">
+                    <h4>Work Done</h4>
+                    <p>When energy is transferred mechanically (by a force moving through a distance):</p>
+                    <p class="equation">\[ W = F \times d \]</p>
+                    <p>Where:</p>
+                    <ul>
+                        <li>\( W \) = work done (J)</li>
+                        <li>\( F \) = force (N)</li>
+                        <li>\( d \) = distance moved in direction of force (m)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Energy Transfer Diagrams</h3>
+                <div class="graph-container">
+                    <div class="graph-placeholder" data-graph="energy-transfer-sankey"></div>
+                    <p class="graph-caption">Fig 1.1: Sankey diagram showing energy transfers in a light bulb</p>
+                </div>
+                <p>Key points about energy transfer diagrams:</p>
+                <ul class="detailed-list">
+                    <li>The width of arrows represents the amount of energy</li>
+                    <li>Useful energy output is typically shown going right</li>
+                    <li>Wasted energy (often as heat) is shown diverging from the main arrow</li>
+                </ul>
+            </div>
+            
+            <div class="subsection">
+                <h3>Efficiency</h3>
+                <p>Efficiency measures how much useful energy is transferred compared to the total energy input:</p>
+                <div class="equation-box">
+                    <p class="equation">\[ \text{Efficiency} = \frac{\text{Useful energy output}}{\text{Total energy input}} \times 100\% \]</p>
+                    <p>Or alternatively:</p>
+                    <p class="equation">\[ \text{Efficiency} = \frac{\text{Useful power output}}{\text{Total power input}} \times 100\% \]</p>
+                </div>
+                
+                <div class="example-box">
+                    <h4>Example Calculation</h4>
+                    <p>A motor lifts a 50kg mass 10m vertically in 5 seconds. The electrical power input is 1.2kW. Calculate the efficiency.</p>
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                        <li>Calculate useful energy output (GPE gained):
+                            \[ E_p = mgh = 50 \times 9.8 \times 10 = 4900\,\text{J} \]
+                        </li>
+                        <li>Calculate useful power output:
+                            \[ P_{\text{useful}} = \frac{4900}{5} = 980\,\text{W} \]
+                        </li>
+                        <li>Calculate efficiency:
+                            \[ \text{Efficiency} = \frac{980}{1200} \times 100\% = 81.7\% \]
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Specific Heat Capacity</h3>
+                <p>The amount of energy required to raise the temperature of 1kg of a substance by 1°C:</p>
+                <div class="equation-box">
+                    <p class="equation">\[ \Delta E = mc\Delta\theta \]</p>
+                    <p>Where:</p>
+                    <ul>
+                        <li>\( \Delta E \) = change in thermal energy (J)</li>
+                        <li>\( m \) = mass (kg)</li>
+                        <li>\( c \) = specific heat capacity (J/kg°C)</li>
+                        <li>\( \Delta\theta \) = temperature change (°C)</li>
+                    </ul>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <caption>Specific Heat Capacity of Common Materials</caption>
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Specific Heat Capacity (J/kg°C)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Water</td>
+                                <td>4200</td>
+                            </tr>
+                            <tr>
+                                <td>Aluminum</td>
+                                <td>900</td>
+                            </tr>
+                            <tr>
+                                <td>Iron</td>
+                                <td>450</td>
+                            </tr>
+                            <tr>
+                                <td>Copper</td>
+                                <td>390</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Power</h3>
+                <p>The rate of energy transfer or work done:</p>
+                <div class="equation-box">
+                    <p class="equation">\[ P = \frac{E}{t} \]</p>
+                    <p>Where:</p>
+                    <ul>
+                        <li>\( P \) = power (W)</li>
+                        <li>\( E \) = energy transferred (J)</li>
+                        <li>\( t \) = time (s)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Energy Resources</h3>
+                <p>Comparison of different energy resources:</p>
+                <div class="table-container">
+                    <table>
+                        <caption>Energy Resource Comparison</caption>
+                        <thead>
+                            <tr>
+                                <th>Resource</th>
+                                <th>Type</th>
+                                <th>Advantages</th>
+                                <th>Disadvantages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fossil Fuels</td>
+                                <td>Non-renewable</td>
+                                <td>Reliable, high energy output</td>
+                                <td>CO₂ emissions, finite supply</td>
+                            </tr>
+                            <tr>
+                                <td>Nuclear</td>
+                                <td>Non-renewable</td>
+                                <td>High energy density, low CO₂</td>
+                                <td>Radioactive waste, high cost</td>
+                            </tr>
+                            <tr>
+                                <td>Solar</td>
+                                <td>Renewable</td>
+                                <td>Clean, low maintenance</td>
+                                <td>Intermittent, low energy density</td>
+                            </tr>
+                            <tr>
+                                <td>Wind</td>
+                                <td>Renewable</td>
+                                <td>Clean, no fuel costs</td>
+                                <td>Visual impact, intermittent</td>
+                            </tr>
+                            <tr>
+                                <td>Hydroelectric</td>
+                                <td>Renewable</td>
+                                <td>Reliable, quick response</td>
+                                <td>Flooding, habitat destruction</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 19: Waves and EM Spectrum -->
+        <section id="section19" class="content-section">
+            <h2><i class="fas fa-wave-square"></i> 19. Waves and the Electromagnetic Spectrum</h2>
+            
+            <div class="subsection">
+                <h3>Wave Properties</h3>
+                <div class="graph-container">
+                    <div class="graph-placeholder" data-graph="transverse-wave"></div>
+                    <p class="graph-caption">Fig 2.1: Transverse wave diagram showing key properties</p>
+                </div>
+                
+                <p>Key wave properties:</p>
+                <ul class="detailed-list">
+                    <li><strong>Amplitude (A)</strong> - maximum displacement from equilibrium (m)</li>
+                    <li><strong>Wavelength (λ)</strong> - distance between identical points on consecutive waves (m)</li>
+                    <li><strong>Frequency (f)</strong> - number of waves passing a point per second (Hz)</li>
+                    <li><strong>Period (T)</strong> - time for one complete wave cycle (s): \( T = \frac{1}{f} \)</li>
+                    <li><strong>Wave speed (v)</strong> - speed at which energy is transferred (m/s): \( v = f\lambda \)</li>
+                </ul>
+                
+                <div class="equation-box">
+                    <h4>Wave Equation</h4>
+                    <p class="equation">\[ v = f\lambda \]</p>
+                    <p>Where:</p>
+                    <ul>
+                        <li>\( v \) = wave speed (m/s)</li>
+                        <li>\( f \) = frequency (Hz)</li>
+                        <li>\( \lambda \) = wavelength (m)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Transverse vs Longitudinal Waves</h3>
+                <div class="comparison-box">
+                    <div class="comparison-item">
+                        <h4>Transverse Waves</h4>
+                        <ul>
+                            <li>Oscillations perpendicular to direction of energy transfer</li>
+                            <li>Examples: electromagnetic waves, water waves, S-waves (seismic)</li>
+                            <li>Can be polarized</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Longitudinal Waves</h4>
+                        <ul>
+                            <li>Oscillations parallel to direction of energy transfer</li>
+                            <li>Examples: sound waves, P-waves (seismic)</li>
+                            <li>Cannot be polarized</li>
+                            <li>Show areas of compression and rarefaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+ 
+    <div class="table-container">
+            <table>
+                <caption>EM Wave Applications and Dangers</caption>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Wavelength Range</th>
+                        <th>Uses</th>
+                        <th>Hazards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Radio</td>
+                        <td>1m - 10⁴m</td>
+                        <td>TV/radio signals</td>
+                        <td>Minimal</td>
+                    </tr>
+                    <tr>
+                        <td>Microwave</td>
+                        <td>1mm - 1m</td>
+                        <td>Cooking, satellite comms</td>
+                        <td>Internal heating</td>
+                    </tr>
+                    <tr>
+                        <td>Infrared</td>
+                        <td>700nm - 1mm</td>
+                        <td>Remote controls, thermal imaging</td>
+                        <td>Skin burns</td>
+                    </tr>
+                    <tr>
+                        <td>Visible Light</td>
+                        <td>400-700nm</td>
+                        <td>Vision, photography</td>
+                        <td>Eye damage (bright)</td>
+                    </tr>
+                    <tr>
+                        <td>Ultraviolet</td>
+                        <td>10-400nm</td>
+                        <td>Sterilization, banknote security</td>
+                        <td>Skin cancer</td>
+                    </tr>
+                    <tr>
+                        <td>X-rays</td>
+                        <td>0.01-10nm</td>
+                        <td>Medical imaging</td>
+                        <td>Cell mutation</td>
+                    </tr>
+                    <tr>
+                        <td>Gamma</td>
+                        <td><0.01nm</td>
+                        <td>Cancer treatment</td>
+                        <td>Radiation poisoning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+        
+                   <!-- Required Practical: Wave Investigation -->
+    <div class="subsection">
+        <h3>Required Practical: Measuring Wave Speed</h3>
+        <div class="practical-box">
+            <h4>Method (Ripple Tank):</h4>
+            <ol>
+                <li>Set up ripple tank with vibrating dipper</li>
+                <li>Measure distance between 10 wave crests</li>
+                <li>Calculate wavelength: \( \lambda = \frac{\text{distance}}{10} \)</li>
+                <li>Measure frequency using strobe light</li>
+                <li>Calculate speed: \( v = f\lambda \)</li>
+            </ol>
+            
+            <h4>Method (String Waves):</h4>
+            <ol>
+                <li>Attach string to vibration generator</li>
+                <li>Adjust frequency until standing wave forms</li>
+                <li>Measure distance between nodes for \( \lambda \)</li>
+                <li>Use \( v = f\lambda \)</li>
+            </ol>
+        </div>
+         </div>
+            <div class="variables-box">
+    <h4><i class="fas fa-water"></i> Variables:</h4>
+    <ul>
+        <li><strong>Independent:</strong> Frequency of dipper (Hz)</li>
+        <li><strong>Dependent:</strong> Wavelength (λ) measured</li>
+        <li><strong>Control:</strong> 
+            <ul>
+                <li>Water depth (keep at 1cm)</li>
+                <li>Temperature of water (affects viscosity)</li>
+                <li>Same light source for strobe</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h4><i class="fas fa-chart-line"></i> Improving Reliability:</h4>
+    <ol>
+        <li><strong>Repeat measurements:</strong> Measure 10 wavelengths 3 times, take average.</li>
+        <li><strong>Calibrate strobe:</strong> Use known frequency (e.g., 50Hz) to verify.</li>
+        <li><strong>Reduce parallax error:</strong> View waves at eye level when measuring.</li>
+    </ol>
+</div>
+            
+            <!-- More subsections for Section 19 would continue here -->
+        </section>
+
+         <!-- Section 20: Radioactivity --> 
+<section id="section20" class="content-section">
+    <h2><i class="fas fa-radiation"></i> 20. YOG</h2>
+    
+    <div class="subsection">
+        <h3>YOG_THE_BLACK_THISSSEF</h3>
+        <li>DONT_ADD_TOO_MUCH_SPICE</li>
+        <li>JUST_SALT_BRO</li>
+        <li>NO_EXTRA_SPICE</li>
+        
+        </div> 
+        
+        
+</section>
+
+<!-- Section 21: Forces and Energy -->
+<section id="section21" class="content-section">
+    <h2><i class="fas fa-weight-hanging"></i> 21. Forces and Energy</h2>
+    
+    <div class="subsection">
+        <h3>Work Done and Energy Transfer</h3>
+        <div class="equation-box">
+            <p class="equation">\[ W = F \times d \]</p>
+            <p>Where:</p>
+            <ul>
+                <li>\( W \) = work done (J)</li>
+                <li>\( F \) = force in direction of motion (N)</li>
+                <li>\( d \) = distance moved (m)</li>
+            </ul>
+        </div>
+        
+        <div class="example-box">
+            <h4>Example Calculation</h4>
+            <p>A 50N force pushes a box 3m across a floor. Calculate work done.</p>
+            <p><strong>Solution:</strong></p>
+            <p class="equation">\[ W = 50 \times 3 = 150\,\text{J} \]</p>
+        </div>
+    </div>
+    
+    <div class="subsection">
+        <h3>Energy Types and Formulas</h3>
+        <div class="comparison-box">
+            <div class="comparison-item">
+                <h4>Kinetic Energy (KE)</h4>
+                <p class="equation">\[ KE = \frac{1}{2}mv^2 \]</p>
+                <p>Where:</p>
+                <ul>
+                    <li>\( m \) = mass (kg)</li>
+                    <li>\( v \) = velocity (m/s)</li>
+                </ul>
+            </div>
+            <div class="comparison-item">
+                <h4>Gravitational Potential Energy (GPE)</h4>
+                <p class="equation">\[ GPE = mgh \]</p>
+                <p>Where:</p>
+                <ul>
+                    <li>\( h \) = height (m)</li>
+                    <li>\( g \) = 9.81 m/s²</li>
+                </ul>
+            </div>
+            <div class="comparison-item">
+                <h4>Elastic Potential Energy (EPE)</h4>
+                <p class="equation">\[ EPE = \frac{1}{2}ke^2 \]</p>
+                <p>Where:</p>
+                <ul>
+                    <li>\( k \) = spring constant (N/m)</li>
+                    <li>\( e \) = extension (m)</li>
+                </ul>
+            </div>
+            
+    </div>
+</div>
+<!-- Section 21: Forces Practical -->
+<div class="practical-box">
+    <h3><i class="fas fa-weight-hanging"></i> Required Practical: Hooke's Law & Elastic Energy</h3>
+    <div class="practical-content">
+        <h4>Equipment:</h4>
+        <ul>
+            <li>Spring</li>
+            <li>Clamp stand</li>
+            <li>Masses (100g increments)</li>
+            <li>Ruler</li>
+            <li>Pointer (optional)</li>
+        </ul>
+        
+        <h4>Method:</h4>
+        <ol>
+            <li>Suspend spring from clamp stand.</li>
+            <li>Measure original length with no load.</li>
+            <li>Add 100g mass, record new length.</li>
+            <li>Calculate extension: \( e = \text{new length} - \text{original length} \).</li>
+            <li>Repeat up to 500g.</li>
+            <li>Plot force (\( F = mg \)) vs. extension graph.</li>
+            <li>Determine spring constant \( k \) from gradient (\( F = ke \)).</li>
+        </ol>
+        
+        <div class="safety-warning">
+            <i class="fas fa-exclamation-triangle"></i> <strong>Safety:</strong> Wear goggles in case spring snaps.
+        </div>
+        </div>
+        </div>
+    <div class="variables-box">
+    <h4><i class="fas fa-expand-alt"></i> Variables:</h4>
+    <ul>
+        <li><strong>Independent:</strong> Mass added (kg)</li>
+        <li><strong>Dependent:</strong> Extension (e) measured</li>
+        <li><strong>Control:</strong>
+            <ul>
+                <li>Same spring (don't change mid-experiment)</li>
+                <li>Temperature (spring constant varies with T)</li>
+                <li>Initial length (measure from same reference point)</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h4><i class="fas fa-chart-line"></i> Improving Reliability:</h4>
+    <ol>
+        <li><strong>Pre-stretch spring:</strong> Add/remove 100g mass 3 times before recording data to eliminate hysteresis.</li>
+        <li><strong>Use pointer:</strong> Attach lightweight pointer to spring for precise length measurements.</li>
+        <li><strong>Check elastic limit:</strong> Ensure spring returns to original length after unloading.</li>
+    </ol>
+</div>
+    
+    <div class="subsection">
+        <h3>Power</h3>
+        <div class="equation-box">
+            <p class="equation">\[ P = \frac{W}{t} \]</p>
+            <p>Where:</p>
+            <ul>
+                <li>\( P \) = power (W)</li>
+                <li>\( W \) = work done (J)</li>
+                <li>\( t \) = time (s)</li>
+            </ul>
+        </div>
+        
+        <div class="example-box">
+            <h4>Example Calculation</h4>
+            <p>A crane lifts a 100kg mass 20m in 10s. Calculate power output.</p>
+            <p><strong>Solution:</strong></p>
+            <ol>
+                <li>Calculate work done (GPE gained):
+                    \[ W = mgh = 100 \times 9.81 \times 20 = 19,620\,\text{J} \]
+                </li>
+                <li>Calculate power:
+                    \[ P = \frac{19,620}{10} = 1,962\,\text{W} \]
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!-- Section 22: Electricity and Circuits -->
+<section id="section22" class="content-section">
+    <h2><i class="fas fa-bolt"></i> 22. Electricity and Circuits</h2>
+    
+    <div class="subsection">
+        <h3>Current, PD, and Resistance</h3>
+        <div class="equation-box">
+            <p class="equation">\[ V = IR \]</p>
+            <p>Where:</p>
+            <ul>
+                <li>\( V \) = potential difference (V)</li>
+                <li>\( I \) = current (A)</li>
+                <li>\( R \) = resistance (Ω)</li>
+            </ul>
+        </div>
+        
+    <div class="subsection">
+        <h3>Series and Parallel Circuits</h3>
+        <div class="comparison-box">
+            <div class="comparison-item">
+                <h4>Series Circuits</h4>
+                <ul>
+                    <li>Current same everywhere</li>
+                    <li>Total resistance:
+                        \[ R_{total} = R_1 + R_2 + \ldots \]
+                    </li>
+                    <li>Voltage splits across components</li>
+                </ul>
+            </div>
+            <div class="comparison-item">
+                <h4>Parallel Circuits</h4>
+                <ul>
+                    <li>Voltage same across branches</li>
+                    <li>Total resistance:
+                        \[ \frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \ldots \]
+                    </li>
+                    <li>Current splits across branches</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="practical-box">
+    <h3><i class="fas fa-bolt"></i> Required Practical: IV Characteristics</h3>
+    <div class="practical-content">
+        <h4>Equipment:</h4>
+        <ul>
+            <li>Power supply (0-12V DC)</li>
+            <li>Ammeter</li>
+            <li>Voltmeter</li>
+            <li>Resistor/filament bulb/diode</li>
+            <li>Rheostat (variable resistor)</li>
+            <li>Connecting wires</li>
+        </ul>
+        
+        <h4>Method:</h4>
+        <ol>
+            <li>Set up series circuit with component, ammeter, and power supply.</li>
+            <li>Connect voltmeter in parallel across component.</li>
+            <li>Vary voltage from 0V in 0.5V increments using rheostat.</li>
+            <li>Record current \( I \) and voltage \( V \) at each step.</li>
+            <li>Reverse power supply connections for diode (if testing reverse bias).</li>
+            <li>Plot \( I \) (y-axis) vs. \( V \) (x-axis) graph.</li>
+        </ol>
+        
+        <h5>Expected Results:</h5>
+        <ul>
+            <li><strong>Resistor:</strong> Straight line through origin (Ohmic conductor)</li>
+            <li><strong>Filament bulb:</strong> Curve flattening as \( V \) increases</li>
+            <li><strong>Diode:</strong> Current only flows above ~0.6V (forward bias)</li>
+        </ul>
+        
+        <div class="safety-warning">
+            <i class="fas fa-exclamation-triangle"></i> <strong>Safety:</strong> Disconnect circuit when adjusting wires.
+        </div>
+        </div>
+        </div>
+         <div class="variables-box">
+    <h4><i class="fas fa-bolt"></i> Variables:</h4>
+    <ul>
+        <li><strong>Independent:</strong> Voltage (V)</li>
+        <li><strong>Dependent:</strong> Current (I) measured</li>
+        <li><strong>Control:</strong>
+            <ul>
+                <li>Same component (don't swap resistors/bulbs)</li>
+                <li>Room temperature (affects resistance)</li>
+                <li>Wire thickness/length</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h4><i class="fas fa-chart-line"></i> Improving Reliability:</h4>
+    <ol>
+        <li><strong>Wait for stabilization:</strong> Allow bulb/diode to reach steady temperature at each voltage.</li>
+        <li><strong>Reverse polarity checks:</strong> For diodes, test both forward and reverse bias.</li>
+        <li><strong>Use digital meters:</strong> Analog meters introduce parallax errors.</li>
+    </ol>
+</div>
+    </div>
+    <div class="subsection">
+        <h3>Energy and Power in Circuits</h3>
+        <div class="equation-box">
+            <p class="equation">\[ P = IV = I^2R = \frac{V^2}{R} \]</p>
+            <p>Where:</p>
+            <ul>
+                <li>\( P \) = power (W)</li>
+                <li>Energy transferred:
+                    \[ E = Pt = IVt \]
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Section 23: Magnetic Fields -->
+<section id="section23" class="content-section">
+    <h2><i class="fas fa-magnet"></i> 23. Magnetic Fields</h2>
+    
+    <div class="subsection">
+        <h3>Magnets and Fields</h3>
+        <div class="graph-container">
+            <div class="graph-placeholder" data-graph="magnetic-field"></div>
+            <p class="graph-caption">Fig 5.1: Magnetic field lines around a bar magnet</p>
+        </div>
+        <ul class="detailed-list">
+            <li>Field lines go from North to South outside magnet</li>
+            <li>Like poles repel, unlike poles attract</li>
+            <li>Field strength indicated by line density</li>
+        </ul>
+    </div>
+    
+    <div class="subsection">
+        <h3>Electromagnetism</h3>
+        <div class="equation-box">
+            <p class="equation">\[ F = BIl \]</p>
+            <p>Where:</p>
+            <ul>
+                <li>\( F \) = force on conductor (N)</li>
+                <li>\( B \) = magnetic flux density (T)</li>
+                <li>\( I \) = current (A)</li>
+                <li>\( l \) = conductor length (m)</li>
+            </ul>
+        </div>
+        
+        <div class="fleming-box">
+            <h4>Fleming's Left-Hand Rule</h4>
+            <div class="hand-diagram">
+                <div class="finger thumb">Force (Motion)</div>
+                <div class="finger index">Field (N→S)</div>
+                <div class="finger middle">Current (+→-)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 24: Matter -->
+<section id="section24" class="content-section">
+    <h2><i class="fas fa-atom"></i> 24. Matter</h2>
+    
+    <div class="subsection">
+        <h3>Density</h3>
+        <div class="equation-box">
+            <p class="equation">\[ \rho = \frac{m}{V} \]</p>
+            <p>Where:</p>
+            <ul>
+                <li>\( \rho \) = density (kg/m³)</li>
+                <li>\( m \) = mass (kg)</li>
+                <li>\( V \) = volume (m³)</li>
+            </ul>
+        </div>
+        
+        <div class="practical-box">
+            <h4>Required Practical: Measuring Density</h4>
+            <p><strong>Regular solid:</strong></p>
+            <ol>
+                <li>Measure dimensions with ruler</li>
+                <li>Calculate volume \( V = l \times w \times h \)</li>
+                <li>Weigh object to find mass \( m \)</li>
+                <li>Calculate \( \rho = \frac{m}{V} \)</li>
+            </ol>
+            
+            <p><strong>Irregular solid:</strong></p>
+            <ol>
+                <li>Fill eureka can to spout level</li>
+                <li>Submerge object, collect displaced water</li>
+                <li>Measure volume of displaced water</li>
+                <li>Weigh object for mass</li>
+                <li>Calculate density</li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="subsection">
+        <h3>Specific Heat Capacity</h3>
+        <div class="equation-box">
+            <p class="equation">\[ E = mc\Delta\theta \]</p>
+            <p>Where:</p>
+            <ul>
+                <li>\( E \) = energy (J)</li>
+                <li>\( c \) = SHC (J/kg°C)</li>
+                <li>\( \Delta\theta \) = temp change (°C)</li>
+            </ul>
+        </div>
+        
+        <div class="practical-box">
+            <h4>Required Practical: Measuring SHC</h4>
+            <ol>
+                <li>Measure mass \( m \) of block</li>
+                <li>Insert heater and thermometer</li>
+                <li>Record initial temperature</li>
+                <li>Supply known energy \( E = VIt \)</li>
+                <li>Record temperature rise \( \Delta\theta \)</li>
+                <li>Calculate \( c = \frac{E}{m\Delta\theta} \)</li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="subsection">
+        <h3>Specific Latent Heat</h3>
+        <div class="equation-box">
+            <p class="equation">\[ E = mL \]</p>
+            <p>Where:</p>
+            <ul>
+                <li>\( L \) = specific latent heat (J/kg)</li>
+                <li>\( L_f \) = fusion (melting/freezing)</li>
+                <li>\( L_v \) = vaporization (boiling/condensing)</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Section 21: Energy Practical -->
+<div class="practical-box">
+    <h3><i class="fas fa-bolt"></i> Required Practical: Specific Heat Capacity</h3>
+    <div class="practical-content">
+        <h4>Equipment:</h4>
+        <ul>
+            <li>Metal block with holes for heater/thermometer</li>
+            <li>Joulemeter or ammeter + voltmeter</li>
+            <li>Power supply</li>
+            <li>Thermometer</li>
+            <li>Stopwatch</li>
+        </ul>
+        
+        <h4>Method:</h4>
+        <ol>
+            <li>Measure mass \( m \) of block.</li>
+            <li>Record initial temperature \( \theta_1 \).</li>
+            <li>Supply known energy \( E = VIt \) for 10 minutes.</li>
+            <li>Record final temperature \( \theta_2 \).</li>
+            <li>Calculate SHC: \( c = \frac{E}{m(\theta_2 - \theta_1)} \).</li>
+            <li>Repeat with insulation to reduce heat loss.</li>
+        </ol>
+        
+        <div class="safety-warning">
+            <i class="fas fa-exclamation-triangle"></i> <strong>Safety:</strong> Allow block to cool between trials.
+        </div>
+    </div>
+</div>
+    <div class="practical-box">
+    <h3><i class="fas fa-cube"></i> Required Practical: Determining Density</h3>
+    <div class="practical-content">
+        <h4>Part A: Regular Solid (Cube)</h4>
+        <h5>Equipment:</h5>
+        <ul>
+            <li>Metal cube</li>
+            <li>Vernier calipers/ruler</li>
+            <li>Digital balance</li>
+        </ul>
+        
+        <h5>Method:</h5>
+        <ol>
+            <li>Measure mass \( m \) of cube using balance.</li>
+            <li>Measure side length \( l \) at 3 positions.</li>
+            <li>Calculate volume: \( V = l^3 \).</li>
+            <li>Calculate density: \( \rho = \frac{m}{V} \).</li>
+        </ol>
+        
+        <h4>Part B: Irregular Solid (Marble)</h4>
+        <h5>Equipment:</h5>
+        <ul>
+            <li>Eureka can</li>
+            <li>Measuring cylinder</li>
+            <li>Marble</li>
+            <li>Digital balance</li>
+        </ul>
+        
+        <h5>Method:</h5>
+        <ol>
+            <li>Measure mass \( m \) of marble.</li>
+            <li>Fill eureka can until water flows from spout.</li>
+            <li>Submerge marble completely, collect displaced water.</li>
+            <li>Measure volume \( V \) of displaced water.</li>
+            <li>Calculate density: \( \rho = \frac{m}{V} \).</li>
+        </ol>
+        
+        <div class="safety-warning">
+            <i class="fas fa-exclamation-triangle"></i> <strong>Safety:</strong> Dry marbles before mass measurement.
+        </div>
+    </div>
+       
+</div>
+ <div class="variables-box">
+    <h4><i class="fas fa-cube"></i> Variables:</h4>
+    <ul>
+        <li><strong>Independent:</strong> Object type (cube vs marble)</li>
+        <li><strong>Dependent:</strong> Density (ρ) calculated</li>
+        <li><strong>Control:</strong>
+            <ul>
+                <li>Measurement tools (same ruler/balance for all)</li>
+                <li>Temperature (affects water density in displacement)</li>
+                <li>Dry objects before mass measurement</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h4><i class="fas fa-chart-line"></i> Improving Reliability:</h4>
+    <ol>
+        <li><strong>Measure multiple cubes/marbles:</strong> 3 of each to identify anomalies.</li>
+        <li><strong>Zero instruments:</strong> Calibrate balance and check ruler starts at 0.</li>
+        <li><strong>Meniscus correction:</strong> Read water level at eye level in measuring cylinder.</li>
+    </ol>
+</div>
+</section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 | Created by ShdowRoot17</p>
+            <div class="footer-links">
+                <a href="#privacy">smells like asshole</a>
+                <a href="#terms">smells like asshole</a>
+                <a href="#contact">smells like asshole</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
